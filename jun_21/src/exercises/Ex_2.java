@@ -10,7 +10,7 @@ public class Ex_2 {
 		System.out.print(num);
 		while(count < 5) {
 			System.out.println("Guess a number between 1-100: ");
-			numGuess = in.nextInt();
+			numGuess = in.nextInt(); //can add error checker here
 			if(numGuess < (num + 10) && numGuess > (num - 10)) {
 				System.out.println("Correct answer was: " + num);
 				System.exit(0);
