@@ -1,0 +1,24 @@
+1. LocalDateTime class
+
+2. Using TemporalAdjuster you can look for the previous Thursday of the current date being looked at.
+LocalDate lastThursday = localDate.with(TemporalAdjusters.previous(DayOfWeek.THURSDAY));
+
+3. ZoneId describes a time-zone identifier and gives rules from going from an Instant and LocalDateTime
+while ZoneOffSet just describes the difference in two time zones
+
+4. Converting an Instant to ZonedDateTime would be
+ZonedDateTime inst = Instant.atZone(ZoneId.of("area of zoneddatetime"))
+to convert from ZonedDateTime to Instant use
+var.toInstant();
+
+5. Taking a year you can use YearMonth.of(year, month);
+Print the YearMonth's .lengthOfMonth(); function for each month
+
+6. Using the year and month as a given, create a date 
+with the year, month and a TemporalAdjusters method to get
+firstInMonth(DayOfWeek.Monday());
+Then use a while look to check if the next(DayOfWeek.MONDAY) is still
+in the same month.
+
+7. Using the date as a given, check if the day in the month matches
+13th and the day of the week is on friday.
